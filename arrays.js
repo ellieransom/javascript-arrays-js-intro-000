@@ -50,6 +50,6 @@ var destructivelyRemoveElementFromEndOfArray = (myArray) => {
 
 
 var removeElementFromEndOfArray = (myArray) => {
-  newArray = myArray.slice(-1)
+  newArray = myArray.slice(0, myArray.length - 1)
   return newArray
 }
