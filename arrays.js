@@ -39,5 +39,17 @@ var destructivelyRemoveElementFromBeginningOfArray = (myArray) => {
 
 var removeElementFromBeginningOfArray = (myArray) => {
   newArray = myArray.slice(1)
-  return newArray 
+  return newArray
+}
+
+
+var destructivelyRemoveElementFromEndOfArray = (myArray) => {
+  myArray.pop()
+  return myArray
+}
+
+
+var removeElementFromEndOfArray = (myArray) => {
+  newArray = myArray.slice(-1)
+  return newArray
 }
