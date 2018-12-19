@@ -4,7 +4,19 @@ var addElementToBeginningOfArray = (myArray, myElement) => {
 }
 
 
-var destructivelyAddElementToEndOfArray = (myArray, myElement) => {
+var addElementToBeginningOfArray = (myArray, myElement) => {
   newArray = myArray.unshift(myElement)
+  return newArray
+}
+
+
+var addElementToEndOfArray = (myArray, myElement) => {
+  newArray = [...myArray, myElement]
+  return newArray
+}
+
+
+var destructivelyAddElementToEndOfArray = (myArray, myElement) => {
+  newArray = myArray.push(myElement)
   return newArray
 }
