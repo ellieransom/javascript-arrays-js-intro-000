@@ -30,3 +30,14 @@ var destructivelyAddElementToEndOfArray = (myArray, myElement) => {
 var accessElementInArray = (myArray, i) => {
   return myArray[i]
 }
+
+
+var destructivelyRemoveElementFromBeginningOfArray = (myArray) => {
+  myArray.shift()
+  return myArray
+}
+
+var removeElementFromBeginningOfArray = (myArray) => {
+  newArray = myArray.slice(1)
+  return newArray 
+}
